@@ -11,7 +11,9 @@ cap=cv2.VideoCapture("sarki.mp4")
 
 
 while True:
-    ret,frame=cap.read()
+    ret,frame=cap.read()  ##burda ret false degerini dondurdugune video durar
+    if ret==False:
+        break
     #frame=cv2.flip(frame,1)   ###webcam için geçerli
     cv2.imshow("Bergen",frame)
     if cv2.waitKey(10) & 0xFF==ord("q"):  #q harfine basarsak videoyu kapatır

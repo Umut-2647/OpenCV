@@ -18,7 +18,10 @@ def resizeWithAspectRatio(img,width=None,height=None,inter=cv2.INTER_AREA):
     return cv2.resize(img,dimension,interpolation=inter)
 
 
-img=cv2.imread("klon.jpg")
+
+
+img=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\klon.jpg")
+
 img1=resizeWithAspectRatio(img,width=None,height=1000,inter=cv2.INTER_AREA)
 
 cv2.imshow("Original",img)

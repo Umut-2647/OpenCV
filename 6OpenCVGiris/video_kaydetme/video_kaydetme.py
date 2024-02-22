@@ -11,7 +11,7 @@ frameRate = 30
 resolution=(640,480)
 videoFileOutput = cv2.VideoWriter(fileName, codec, frameRate, resolution)
 
-
+##webcam deki goruntu durana kadar devam eder ve video olarak kaydeder
 while True:
     ret, frame = cap.read()
     frame=cv2.flip(frame, 1)

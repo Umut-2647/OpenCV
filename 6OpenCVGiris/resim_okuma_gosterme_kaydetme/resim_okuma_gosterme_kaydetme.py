@@ -1,9 +1,10 @@
 import cv2
 
 
-img=cv2.imread("klon.jpg", ) #0 demek gri şekilde okumak demek
+img=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\klon.jpg") #0 demek gri şekilde okumak demek
 
 #print(img)
+
 
 cv2.namedWindow("Image",cv2.WINDOW_NORMAL) #resmi boyutlandırabilir hale getirmek için kullanılır
 cv2.imshow("Image",img)
