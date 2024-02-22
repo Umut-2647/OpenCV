@@ -16,7 +16,7 @@ cv2.rectangle(canvas,(50,50),(150,150),(0,255,0),-1) #dikdörtgenin içinin dolu
 
 ####DAİRE
 cv2.circle(canvas,(250,250),100,(0,0,255),6)           #(merkezi)(yaricap)(renk)(kalinlik)
-cv2.circle(canvas,(100,100),20,(255,0,255),-1)
+cv2.circle(canvas,(100,100),20,(255,0,255),-1) ##-1 ici dolu demek
 
 
 ####UCGEN
@@ -25,7 +25,7 @@ p1=(120,40)
 p2=(50,130)
 p3=(20,20)
 
-cv2.line(canvas,p1,p2,(0,0,0),5)
+cv2.line(canvas,p1,p2,(0,0,0),5)  ##olusturdugumuz cizgileri birlestirerek bir sekil olusturur
 cv2.line(canvas,p2,p3,(0,0,0),5)
 cv2.line(canvas,p1,p3,(0,0,0),5)
 

@@ -10,7 +10,7 @@ img[0,2]=(255,255,150)
 img[0,3]=(255,255,15)
 """
 
-img=np.zeros((10,10),dtype=np.uint8) #eger 3 olmazsa siyah beyazdir
+img=np.zeros((10,10),dtype=np.uint8)  #eger 3 olmazsa siyah beyazdir
 
 img[0,0]=255
 img[0,1]=200
