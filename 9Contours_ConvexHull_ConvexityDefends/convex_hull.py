@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img=cv2.imread("C:\\Users\\umuty\\Downloads\\map.jpg")
+img=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\map.jpg")
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 blur=cv2.blur(gray,(3,3))
 
@@ -12,7 +12,7 @@ hull=[]   ##kontuları saklayacağımız boş bir dizi oluşturuyoruz
 
 
 for i in range(len(contours)):
-    hull.append(cv2.convexHull(contours[i],False))  ##0 dan len(contours) a kadar olan degerleri bukup indislerini döndürücek
+    hull.append(cv2.convexHull(contours[i],False))  ##0 dan len(contours) a kadar olan degerleri bulup indislerini döndürücek
 
 back_ground=np.zeros((thresh.shape[0],thresh.shape[1],3),np.uint8)
 
