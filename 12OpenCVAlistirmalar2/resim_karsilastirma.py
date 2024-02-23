@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
 
-img1=cv2.imread("C:\\Users\\umuty\\Downloads\\aircraft.jpg")
+img1=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\aircraft.jpg")
 img1=cv2.resize(img1,(640,700))
 
-img2=cv2.imread("C:\\Users\\umuty\\Downloads\\aircraft1.jpg")
+img2=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\aircraft1.jpg")
 img2=cv2.resize(img2,(640,700))
 
 img3=cv2.medianBlur(img1,7)

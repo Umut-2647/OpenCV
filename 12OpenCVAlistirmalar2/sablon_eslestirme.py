@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-img=cv2.imread("C:\\Users\\umuty\\Downloads\\starwars.jpg")
-template=cv2.imread("C:\\Users\\umuty\\Downloads\\starwars2.jpg")
+img=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\starwars.jpg")
+template=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\starwars2.jpg")
 
 gray_img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 gray_template=cv2.cvtColor(template,cv2.COLOR_BGR2GRAY)

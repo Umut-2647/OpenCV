@@ -4,11 +4,11 @@ import numpy as np
 def nothing(x):  #trackbar kullanacağımız icin bos bir fonksiyona ihtiyacımız var
     pass
 
-img1=cv2.imread("C:\\Users\\umuty\\Downloads\\aircraft.jpg")
+img1=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\aircraft.jpg")
 
 img1=cv2.resize(img1,(640,480))                     ##resimlerin ayni boyutta olamsı lazım
 
-img2=cv2.imread("C:\\Users\\umuty\\Downloads\\balls.jpg")
+img2=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\balls.jpg")
 
 img2=cv2.resize(img2,(640,480))
 
@@ -28,11 +28,6 @@ while True:
     output=cv2.addWeighted(img1,alpha,img2,beta,0)
 
     print(alpha,beta)
-
-
-
-
-
 
     if cv2.waitKey(1)==27:         #yani esc ye basıldığında
         break
