@@ -4,13 +4,13 @@ import numpy as np
 font=cv2.FONT_HERSHEY_SIMPLEX   ##opencv fonts diye aratılabilir
 font1=cv2.FONT_HERSHEY_COMPLEX
 
-img=cv2.imread("C:\\Users\\umuty\\Downloads\\polygons.png")
+img=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\polygons.png")
 
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)  ##ilk resmi graye çeviriyoruz
 
 _,threshold=cv2.threshold(gray,127,255,cv2.THRESH_BINARY)  ##ardından threshold uyguluyoruz # (başına alt tre koymamızın sebebi threshold tek deger dondurmuyor)
 
-contours,_=cv2.findContours(threshold,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE) ##burda yazılanlar default olarak yazılabilir
+contours,_=cv2.findContours(threshold,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE) ##burda thresholdan sonra yazılanlar default olarak yazılabilir
 
 for cnt in contours:
     epsilon=0.01*cv2.arcLength(cnt,True) ##burda konturlara daha da yaklaşıyoruz

@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
  ##fonksiyon ile yapıldığı zaman daha iyi ve temiz oluyor
-cap=cv2.VideoCapture("C:\\Users\\umuty\\Downloads\\car.mp4")
+cap=cv2.VideoCapture("C:\\Users\\umuty\\Desktop\\OpenCV\\test_videos\\car.mp4")
 subtractor=cv2.createBackgroundSubtractorMOG2(history=100,varThreshold=50,detectShadows=True)   ##hazır fonksiyon ile arka plan çıkarma
 ##detectShadows=gölgeler de algılansın mı ?
 

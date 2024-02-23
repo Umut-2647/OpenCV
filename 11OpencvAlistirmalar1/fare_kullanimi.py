@@ -1,6 +1,6 @@
 import cv2
 
-cap=cv2.VideoCapture("C:\\Users\\umuty\\Downloads\\car.mp4")
+cap=cv2.VideoCapture("C:\\Users\\umuty\\Desktop\\OpenCV\\test_videos\\car.mp4")
 
 ##ne yaptığımıza karar verecek bir fonksiyona ihtiyacimiz var
 circles=[]

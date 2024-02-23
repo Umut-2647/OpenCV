@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap=cv2.VideoCapture("C:\\Users\\umuty\\Downloads\\eye_motion.mp4")
+cap=cv2.VideoCapture("C:\\Users\\umuty\\Desktop\\OpenCV\\test_videos\\eye_motion.mp4")
 
 ##bu uygulamayı yapabilmek için göz kısmını rio olarak belirliyoruz
 
@@ -29,7 +29,7 @@ while 1:
         cv2.rectangle(roi,(x,y),(x+w,y+h),(255,0,0),2)  ##genislik ve yukseklik
         cv2.line(roi,(x+int(w/2),0),(x+int(w/2),rows),(0,255,0),2)
         cv2.line(roi,(0,y+int(h/2)),(cols,y+int(h/2)),(0,255,0),2)
-
+        ##gozun merkezinde cizgiler olusturuyoruz
         break
 
     cv2.imshow("Roi",roi)

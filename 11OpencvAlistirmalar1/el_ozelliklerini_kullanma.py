@@ -26,7 +26,7 @@ def findMAxContour(contours):           #maks konturları bulmak için bir fonks
 
 while 1:
     ret,frame=cap.read()
-    frame=cv2.flip(frame,1)
+    frame=cv2.flip(frame,1) ##frameleri ters ceviriyoruz
 
 
     roi=frame[180:450,220:500]   ##frame[y1:y2,x1:x2]
@@ -66,7 +66,7 @@ while 1:
             cv2.circle(roi,en_ust,5,(0,255,0),2)
 
 
-            cv2.line(roi, en_ust, en_sol, (255, 0, 0),2)                      #buldugumuz konumları birlestirerek sekil olusturuyoruz
+            cv2.line(roi, en_ust, en_sol, (255, 0, 0),2)        #buldugumuz konumları birlestirerek sekil olusturuyoruz
             cv2.line(roi, en_sol, en_sag, (255, 0, 0), 2)
             cv2.line(roi, en_sag, en_ust, (255, 0, 0), 2)
 

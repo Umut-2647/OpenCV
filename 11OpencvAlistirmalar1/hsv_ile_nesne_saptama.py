@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap=cv2.VideoCapture("C:\\Users\\umuty\\Downloads\\hsv.mp4")
+cap=cv2.VideoCapture("C:\\Users\\umuty\\Desktop\\OpenCV\\test_videos\\hsv.mp4")
 cap1=cv2.VideoCapture(0)
 
 ##trackbar kullanacağımız için boş bir fonksiyona ihtiyacımız var
@@ -40,7 +40,7 @@ while 1:
     lower_color=np.array([lh,ls,lv])    ##yukarda aldığımız değerleri saklıyoruz
     upper_color=np.array([uh,us,uv])
 
-    mask=cv2.inRange(hsv,lower_color,upper_color)
+    mask=cv2.inRange(hsv,lower_color,upper_color)  ##maske uyguluyoruz
     bitwise=cv2.bitwise_and(frame,frame,mask=mask)
 
     cv2.imshow("frame",frame)

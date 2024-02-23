@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-def nothing(x):    #trackbar kullanılacağı için boş bir fonksiyona ihtiyacımız var
+def nothing(x):      #trackbar kullanılacağı için boş bir fonksiyona ihtiyacımız var
     pass
 
 cap=cv2.VideoCapture(0)

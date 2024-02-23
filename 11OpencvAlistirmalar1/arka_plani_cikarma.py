@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap=cv2.VideoCapture("C:\\Users\\umuty\\Downloads\\car.mp4")
+cap=cv2.VideoCapture("C:\\Users\\umuty\\Desktop\\OpenCV\\test_videos\\car.mp4")
 
 _,first_frame=cap.read()      ##burdan ilk frame i cekip diğer framelerle karşılaştıracaz
 first_frame=cv2.resize(first_frame,(640,480))

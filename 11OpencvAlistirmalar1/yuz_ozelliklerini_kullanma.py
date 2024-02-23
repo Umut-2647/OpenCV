@@ -6,7 +6,7 @@ import numpy as np
 cap=cv2.VideoCapture(0)
 
 
-def findMAxContour(contours):           #maks konturları bulmak için bir fonksiyon tanımlıyoruz
+def findMAxContour(contours):        #maks konturları bulmak için bir fonksiyon tanımlıyoruz
     max_i=0
     max_area=0
 
