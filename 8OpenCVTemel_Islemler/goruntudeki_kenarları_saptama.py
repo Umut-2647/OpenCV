@@ -7,10 +7,11 @@ cap=cv2.VideoCapture(0)
 while True:
      ret,frame=cap.read()
      frame=cv2.flip(frame,1)
-     if ret==False:
+
+     if ret==False: ##video bittiginde duracak
          break
 
-     edges=cv2.Canny(frame,100,200)
+     edges=cv2.Canny(frame,100,200)  ##videodaki kenarları bulmak icin kullanacağımız fonksiyon
      cv2.imshow("Frame",frame)
      cv2.imshow("Edges",edges)
 

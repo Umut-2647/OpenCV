@@ -4,14 +4,14 @@ import cv2
 import numpy as np
 
 
-circle=np.zeros((512,512,3) , np.uint8)+255
+circle=np.zeros((512,512,3) , np.uint8)+255   ##cemberin cizilecegi yeri olusturuyoruz
 cv2.circle(circle,(256,256),60,(255,0,0),-1)
 
 
-rectangle=np.zeros((512,512,3) , np.uint8)+255
+rectangle=np.zeros((512,512,3) , np.uint8)+255         #dikdortgenin cizilecegi yeri olusturuyoruz
 cv2.rectangle(rectangle,(150,150),(350,350),(0,0,255),-1)
 
-dst = cv2.addWeighted(circle,0.7,rectangle,0.3,0)
+dst = cv2.addWeighted(circle,0.7,rectangle,0.3,0) ##resim agırlıklarına gore resmi getiriyor
 
 
 cv2.imshow("Circle", circle)

@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img=cv2.imread("helikopter.jpg",0)
+img=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\helikopter.jpg",0)
 
 kernel=np.ones((5,5),np.uint8)
 

@@ -1,12 +1,12 @@
 import cv2
 import numpy as np
 
-img_filter=cv2.imread("filter.png")
-img_bilateral=cv2.imread("bilateral.png")
-img_median=cv2.imread("median.png")
+img_filter=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\filter.png")
+img_bilateral=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\bilateral.png")
+img_median=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\median.png")
 
 blur=cv2.blur(img_filter,(11,11)) ##pozitif tek sayilar
-blur2=cv2.GaussianBlur(img_filter,(11,11),cv2.BORDER_DEFAULT)
+blur2=cv2.GaussianBlur(img_filter,(11,11),cv2.BORDER_DEFAULT)  ##resme bazı islemler yapıp resmi yumuşatırlar
 median_blur=cv2.medianBlur(img_median,9)
 bilateral_blur=cv2.bilateralFilter(img_bilateral,9,95,95)
 
