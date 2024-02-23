@@ -16,7 +16,7 @@ gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) #resmi gri tonlara ceviriyorz
 
 faces=face_cascade.detectMultiScale(gray,1.3,7)   #bu fonksiyon cascade dosyasını kullanarak resim uzerindeki yuzleri bulup koordinatlari degiskene atıyor
 
-##bu faces degiskeni 4 deger tutar. Sol ust kosenin koordinatları ve genislik ve yukseklik
+##bu eyes degiskeni 4 deger tutar. Sol ust kosenin koordinatları ve genislik ve yukseklik
 
 for (x,y,w,h) in faces:
     cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),3)  ##burda bulunan yuze bir dikdortgen ciziyoruyuz
