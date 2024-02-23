@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
 
-coins=cv2.imread("C:\\Users\\umuty\\Downloads\\coins.jpg")
-balls=cv2.imread("C:\\Users\\umuty\\Downloads\\balls.jpg")
+coins=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\coins.jpg")
+balls=cv2.imread("C:\\Users\\umuty\\Desktop\\OpenCV\\test_images\\balls.jpg")
 
-gray_c=cv2.cvtColor(coins,cv2.COLOR_BGR2GRAY)
+gray_c=cv2.cvtColor(coins,cv2.COLOR_BGR2GRAY)  ##resimleri gri tona ceviriyoruz
 gray_b=cv2.cvtColor(balls,cv2.COLOR_BGR2GRAY)
 
 coins_blur=cv2.medianBlur(gray_c,5)  ##resimleri blurluyoruz

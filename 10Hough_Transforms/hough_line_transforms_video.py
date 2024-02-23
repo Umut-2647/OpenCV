@@ -1,11 +1,11 @@
 import cv2
 import numpy as np
 
-cap=cv2.VideoCapture("C:\\Users\\umuty\\Downloads\\line.mp4")
+cap=cv2.VideoCapture("C:\\Users\\umuty\\Desktop\\OpenCV\\test_videos\\line.mp4")
 
 while True:
     ret,frame=cap.read()
-    frame=cv2.resize(frame,(640,480))
+    frame=cv2.resize(frame,(640,480)) ##frami tekrardan boyutlandiriyoruz
     hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
 
     lower_yellow=np.array([20,100,100],np.uint8) ##burda videonun sarı kısmını ayırıyoruz
