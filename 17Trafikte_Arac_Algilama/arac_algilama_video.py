@@ -16,7 +16,7 @@ while 1:
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # resmi gri tonlara ceviriyorz
     cars = car_cascade.detectMultiScale(gray, 1.2, 2)
 
-    ##bu bodies degiskeni 4 deger tutar. Sol ust kosenin koordinatları ve genislik ve yukseklik
+    ##bu cars degiskeni 4 deger tutar. Sol ust kosenin koordinatları ve genislik ve yukseklik
 
     for (x, y, w, h) in cars:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)

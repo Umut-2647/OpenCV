@@ -10,7 +10,7 @@ gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) #resmi gri tonlara ceviriyorz
 
 cars=car_cascade.detectMultiScale(gray,1.1,1)
 
-##bu bodies degiskeni 4 deger tutar. Sol ust kosenin koordinatları ve genislik ve yukseklik
+##bu cars degiskeni 4 deger tutar. Sol ust kosenin koordinatları ve genislik ve yukseklik
 
 
 for (x,y,w,h) in cars:
